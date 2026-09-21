@@ -1,0 +1,7 @@
+#cmdk-backdrop{ position:fixed; inset:0; background:rgba(4,6,11,0.7); backdrop-filter:blur(4px); z-index:100; display:none; align-items:flex-start; justify-content:center; padding-top:14vh; }
+#cmdk-backdrop.open{ display:flex; }
+.kbd{
+  font-family:'JetBrains Mono', monospace; font-size:0.72rem;
+  padding:0.15rem 0.45rem; border-radius:6px;
+  background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#B7BDD0;
+}

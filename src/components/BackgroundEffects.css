@@ -1,0 +1,16 @@
+.grain{
+  position:fixed; inset:0; z-index:2; pointer-events:none; opacity:0.045;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay;
+}
+
+#particles{ position:fixed; inset:0; z-index:0; }
+.spotlight{
+  position:fixed; inset:0; z-index:1; pointer-events:none;
+  background: radial-gradient(600px circle at var(--mx,50%) var(--my,50%), rgba(0,240,255,0.06), transparent 60%);
+  transition: background 0.1s ease-out;
+}
+
+@media (max-width: 767px){
+  .spotlight{ display:none; }
+}

@@ -1,0 +1,7 @@
+.timeline-line{
+  background:linear-gradient(180deg, transparent, rgba(0,240,255,0.5) 10%, rgba(121,40,202,0.5) 50%, rgba(0,223,137,0.5) 90%, transparent);
+}
+.node-dot{
+  width:14px; height:14px; border-radius:50%; background:#04060B;
+  border:2px solid var(--cyan); box-shadow:0 0 0 4px rgba(0,240,255,0.12);
+}

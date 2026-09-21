@@ -1,0 +1,28 @@
+.badge-chip{
+  display:inline-flex; align-items:center; gap:0.4rem;
+  padding:0.55rem 0.95rem; border-radius:12px;
+  background:rgba(255,255,255,0.035); border:1px solid rgba(255,255,255,0.09);
+  font-family:'JetBrains Mono', monospace; font-size:0.78rem; color:#CDD3E2;
+  transition: border-color .25s, background .25s, transform .25s, box-shadow .25s;
+  cursor:default; position:relative;
+}
+.badge-chip:hover{ transform:translateY(-3px); }
+.badge-chip[data-c="cyan"]:hover{ border-color:rgba(0,240,255,0.6); box-shadow:0 8px 24px -8px rgba(0,240,255,0.35); color:#fff; }
+.badge-chip[data-c="violet"]:hover{ border-color:rgba(121,40,202,0.7); box-shadow:0 8px 24px -8px rgba(121,40,202,0.45); color:#fff; }
+.badge-chip[data-c="emerald"]:hover{ border-color:rgba(0,223,137,0.6); box-shadow:0 8px 24px -8px rgba(0,223,137,0.35); color:#fff; }
+
+.tooltip{
+  position:absolute; bottom:calc(100% + 10px); left:50%; transform:translateX(-50%) translateY(4px);
+  width:max-content; max-width:220px; padding:0.55rem 0.75rem; border-radius:10px;
+  background:#0A0E17; border:1px solid rgba(255,255,255,0.12);
+  font-family:'Plus Jakarta Sans', sans-serif; font-size:0.72rem; line-height:1.35; color:#CDD3E2;
+  opacity:0; pointer-events:none; transition: opacity .2s, transform .2s; z-index:20;
+  box-shadow:0 12px 30px -10px rgba(0,0,0,0.6);
+}
+.badge-chip:hover .tooltip{ opacity:1; transform:translateX(-50%) translateY(0); }
+
+.tab-btn{
+  padding:0.6rem 1.1rem; border-radius:9999px; font-size:0.85rem; font-weight:600;
+  color:#8890A6; transition:color .25s; position:relative; z-index:1; white-space:nowrap;
+}
+.tab-btn.active{ color:#04060B; }
