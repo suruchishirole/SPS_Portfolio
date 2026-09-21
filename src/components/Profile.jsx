@@ -41,7 +41,7 @@ export default function Profile()
                 <div className="absolute inset-0 rounded-full" style={{background:'conic-gradient(from 0deg, #00F0FF, #7928CA, #00DF89, #f83e92)', filter:'blur(2px)', animation:'spin 6s linear infinite'}}></div>
                 <div className="absolute inset-[3px] rounded-full bg-[#0A0E17] flex items-center justify-center overflow-hidden">
                   {/* Replace '/your-photo.jpg' with your actual image path */}
-                  <img src="SPS_ProfessionalPhoto.jpeg" alt="Suruchi Shirole" className="w-full h-full object-cover rounded-full border-[3px] border-transparent" />
+                  <img src="/SPS_ProfessionalPhoto.jpg" alt="Suruchi Shirole" className="w-full h-full object-cover rounded-full border-[3px] border-transparent" />
                 </div>
               </div>
               <div>
